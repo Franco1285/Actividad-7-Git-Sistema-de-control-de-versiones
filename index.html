@@ -28,3 +28,10 @@ function calcularDivision() {
     }
 }
 <input type="button" value="Calcular división" style="background-color: orange;" onclick="calcularDivision()">
+function calcularProducto() {
+    const a = parseFloat(document.getElementById('a').value) || 0;
+    const b = parseFloat(document.getElementById('b').value) || 0;
+    document.getElementById('resultado').innerText = a * b;
+}
+<input type="button" value="Calcular producto" style="background-color: yellow;" onclick="calcularProducto()">
+
