@@ -1,3 +1,44 @@
+  GNU nano 8.2                                                                               index.html
+<script>
+function calcularSuma() {
+    const a = parseFloat(document.getElementById('a').value) || 0;
+    const b = parseFloat(document.getElementById('b').value) || 0;
+    document.getElementById('resultado').innerText = a + b;
+}
+
+function calcularResta() {
+    const a = parseFloat(document.getElementById('a').value) || 0;
+    const b = parseFloat(document.getElementById('b').value) || 0;
+    document.getElementById('resultado').innerText = a - b;
+}
+</script>
+<input id="a" type="number" placeholder="A">
+<input id="b" type="number" placeholder="B">
+<input type="button" value="Calcular suma" style="background-color: green;" onclick="calcularSuma()">
+<input type="button" value="Calcular resta" style="background-color: red;" onclick="calcularResta()">
+<div id="resultado"></div>
+<input type="button" value="Calcular suma" style="background-color: green;" onclick="calcularSuma()">
+<input type="button" value="Calcular resta" style="background-color: red;" onclick="calcularResta()">
+function calcularDivision() {
+    const a = parseFloat(document.getElementById('a').value) || 0;
+    const b = parseFloat(document.getElementById('b').value) || 0;
+    if (b === 0) {
+        document.getElementById('resultado').innerText = "Error: división por cero";
+    } else {
+        document.getElementById('resultado').innerText = a / b;
+    }
+}
+<input type="button" value="Calcular división" style="background-color: orange;" onclick="calcularDivision()">
+function calcularProducto() {
+    const a = parseFloat(document.getElementById('a').value) || 0;
+    const b = parseFloat(document.getElementById('b').value) || 0;
+    document.getElementById('resultado').innerText = a * b;
+}
+<input type="button" value="Calcular producto" style="background-color: yellow;" onclick="calcularProducto()">
+
+
+
+
 <script>
 function calcularSuma() {
     const a = parseFloat(document.getElementById('a').value) || 0;
