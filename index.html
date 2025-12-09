@@ -1,0 +1,18 @@
+<script>
+function calcularSuma() {
+    const a = parseFloat(document.getElementById('a').value) || 0;
+    const b = parseFloat(document.getElementById('b').value) || 0;
+    document.getElementById('resultado').innerText = a + b;
+}
+
+function calcularResta() {
+    const a = parseFloat(document.getElementById('a').value) || 0;
+    const b = parseFloat(document.getElementById('b').value) || 0;
+    document.getElementById('resultado').innerText = a - b;
+}
+</script>
+<input id="a" type="number" placeholder="A">
+<input id="b" type="number" placeholder="B">
+<input type="button" value="Calcular suma" style="background-color: green;" onclick="calcularSuma()">
+<input type="button" value="Calcular resta" style="background-color: red;" onclick="calcularResta()">
+<div id="resultado"></div>
